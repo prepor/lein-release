@@ -4,6 +4,8 @@
    [clojure.string     :as string])
   (:import
    [java.util.regex Pattern]))
+ 
+(def ^:dynamic config {})
 
 (defn raise [fmt & args]
   (throw (RuntimeException. (apply format fmt args))))
